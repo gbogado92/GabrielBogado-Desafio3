@@ -10,6 +10,11 @@ const Navbar = () => {
   const hoverStyles = {
     color: "yellow",
   };
+
+  const buttonStyles = {
+    backgroundColor: "white",
+  };
+
   return (
     <nav className="navbar navbar-expand-lg bg-dark">
       <div className="container-fluid">
@@ -17,13 +22,14 @@ const Navbar = () => {
           Fashion Store
         </h3>
         <button
-          className="navbar-toggler"
+          className="navbar-toggler btn-white"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          style={buttonStyles}
         >
           <span className="navbar-toggler-icon" />
         </button>
